@@ -29,7 +29,7 @@ config.whitelistedSubreddits.forEach(subredditName => {
 subreddits.on('submission', (name, item) => {
   if(item.crosspost_parent_list != undefined) {
     if(config.blackistedSubreddits.indexOf(item.crosspost_parent_list[0].subreddit_name_prefixed) != -1) {
-      
+      item.reply(fs.readFileSync("./reply.md", 'utf-8'))
     }
   } else {
     console.log("POST NOT A CROSSPOST.")

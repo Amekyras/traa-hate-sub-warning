@@ -1,0 +1,12 @@
+{
+  "whitelistedSubreddits": [
+    "egg_irl",
+    "traaaaaaannnnnnnnnns",
+    "crossposttest"
+  ],
+  "blackistedSubreddits": [
+    "r/GamersRiseUp",
+    "r/Gamingcirclejerk",
+    "r/The_Donald"
+  ]
+}
