@@ -29,7 +29,7 @@ config.whitelistedSubreddits.forEach(subredditName => {
 
 subreddits.on('submission', (name, item) => {
   if(item.crosspost_parent_list != undefined) {
-    if(config.blackistedSubreddits.indexOf(item.crosspost_parent_list[0].subreddit_name_prefixed) != -1) {
+    if(config.blackistedSubreddits.indexOf(item.crosspost_parent_list[0].subreddit_name_prefixed.toLowerCase()) != -1) {
       console.log(chalk.red(`[X] [r/${name}]`.padEnd(30, " ")) + " : " + chalk.green(("u/" + item.author.name).padEnd(25, " ")) + " : " + chalk.blue(item.title))
       item.reply(fs.readFileSync("./reply.md", 'utf-8').split("[subreddit]").join(item.crosspost_parent_list[0].subreddit_name_prefixed))
     } else {

@@ -13,7 +13,8 @@
     "wholesometransmemes"
   ],
   "blackistedSubreddits": [
-    "r/GamersRiseUp",
-    "r/The_Donald"
+    "r/gamersriseup",
+    "r/the_donald",
+    "r/dankmemes"
   ]
 }
