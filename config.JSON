@@ -10,11 +10,15 @@
     "surrealtraa",
     "transgendercirclejerk",
     "transitiongoals",
-    "wholesometransmemes"
+    "wholesometransmemes",
+    "test"
   ],
   "blackistedSubreddits": [
     "r/gamersriseup",
     "r/the_donald",
     "r/dankmemes"
+  ],
+  "blacklistedUsers": [
+    "sneakpeekbot"
   ]
 }
